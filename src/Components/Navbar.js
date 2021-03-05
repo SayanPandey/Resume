@@ -4,7 +4,8 @@ import {Tab,Tabs,AppBar,makeStyles} from '@material-ui/core'
 
 const useStyles = makeStyles((theme)=>({
     AppBar : {
-      backgroundColor :'#0D47A1',
+      background:'none',
+      //backgroundColor :'#0D47A1',
       color:'#F3E5F5',
       position: 'sticky',
       top: '0',

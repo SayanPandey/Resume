@@ -5,7 +5,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        background: '#010101',
+        background: 'linear-gradient(to right, #743ad5, #d53a9d)',
         color: '#FFFFFF',
         position:'sticky',
         top:'0',

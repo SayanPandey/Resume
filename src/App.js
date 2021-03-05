@@ -1,17 +1,29 @@
 import './App.css';
-import {Button} from '@material-ui/core'
+import {Button,makeStyles} from '@material-ui/core'
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
 import Navbar from './Components/Navbar'
 import LandingPage from "./Components/LandingPage/LandingPage"
 import AboutPage from './Components/AboutPage/AboutPage'
+import Experience from './Components/Experience/Experience'
+
+const useStyles = makeStyles((theme)=>({
+  root :{
+    minHeight : '100vh',
+
+  }
+}));
 
 function App() {
+  // const classes = useStyles();
   return (
     <div className="App">
       <Router>
         {/* <Navbar/> */}
-        <LandingPage/>
-        <AboutPage/>
+        {/* <div className={classes.root}> */}
+          <LandingPage/>
+          <AboutPage/>
+        {/* </div> */}
+        <Experience />
       </Router>
     </div>
   );

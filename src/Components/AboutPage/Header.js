@@ -1,7 +1,7 @@
 import React, {useEffect,useState} from 'react'
 import { makeStyles, AppBar, IconButton, Toolbar, Typography, Collapse, Zoom } from '@material-ui/core'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import LandingImage from '../../Assets/LandingPageN.png'
+import LandingImage from '../../Assets/LandingPage0N.png'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -38,8 +38,8 @@ const useStyles = makeStyles((theme) => ({
 
     },
     Collapse : {
-        background: 'rgb(1,1,1)',
-        background: 'linear-gradient(360deg, rgba(1,1,1,1) 20%, rgba(33,33,33,1) 49%, rgba(33,33,33,1) 100%)',
+        // background: 'rgb(0,0,0,0.3)',
+        // background: 'linear-gradient(360deg, rgba(0,0,0,1) 10%, rgba(33,33,33,0.2) 69%, rgba(33,33,33,0) 100%)',
     }
 }));
 
@@ -58,9 +58,9 @@ function Header(props) {
             <div className={classes.root}>
                 <Typography className={classes.Name} variant="h1">Sayan Pandey</Typography>
                 {props.children}
-                <IconButton>
+                {/* <IconButton>
                     <ExpandMoreIcon className={classes.more} />
-                </IconButton>
+                </IconButton> */}
             </div>
         </Collapse>
     )

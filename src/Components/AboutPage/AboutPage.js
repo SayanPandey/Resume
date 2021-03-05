@@ -5,9 +5,11 @@ import AboutText from './AboutText'
 
 const useStyles = makeStyles((theme)=>({
     root:{
-        background:'#010101',
+        //background:'#743ad5',
+        //backgroundImage:'linear-gradient(to right, #743ad5, #d53a9d)',
+        backgroundImage:'linear-gradient(to right, rgb(116,58,213,0.7), rgb(213,58,157,0.7))',
         //color:'#FFFFFF',
-        paddingBottom:'20px'
+        paddingBottom:'20px',
     }
 }));
 
@@ -23,7 +25,6 @@ function AboutPage() {
                    <Image/>
                 </Grid>
             </Grid> 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
         </>
     )
 }
