@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: 'column',
         marginLeft:'auto',
         marginRight:'auto',
-        background: `url(${LandingImage})`,
+        //background: `url(${LandingImage})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center center',
         backgroundSize:'cover',

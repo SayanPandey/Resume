@@ -6,11 +6,12 @@ import StyleCSS from './Pagify.css'
 
 const paperStyle = {
     minHeight:'90vh',
+    minWidth :'95vw',
+    maxWidth : '95vw',
     marginLeft:'auto',
     marginRight:'auto',
     marginTop:'5vh',
     marginBottom:'auto',
-    minWidth :'95%',
     textAlign:'left',
     //background: '#212121',
     //color: '#FFFFFF',
@@ -31,7 +32,7 @@ export default (WrappedComponent) => {
     const hocComponent = ({ ...props }) =>
     (
         <div style={root}>
-            <Paper elevation={24} style={paperStyle} className="border-gradient border-gradient-purple" >
+            <Paper elevation={3} style={paperStyle} className="border-gradient border-gradient-purple" >
                 <WrappedComponent {...props} />
             </Paper>
         </div>

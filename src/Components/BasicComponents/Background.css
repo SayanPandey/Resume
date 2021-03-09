@@ -1,0 +1,6 @@
+.lightBackground{
+    background-image:linear-gradient(to right, rgb(116,58,213,0.7), rgb(213,58,157,0.7));
+}
+.darkBackground{
+    background-image:linear-gradient(to right, rgb(116,58,213), rgb(213,58,157));
+}

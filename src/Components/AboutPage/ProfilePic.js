@@ -6,6 +6,7 @@ import Header from './Header'
 const useStyles = makeStyles((theme) => ({
     root: {
         minHeight: '90vh',
+        maxHeight:'100%',
         minWidth: '100%',
         //backgroundColor:'#010101',
         //width: '100%',

@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme)=>({
     }),
 }));
 
-function SectionHeading(props) {
+export default function SectionHeading(props) {
     const classes = useStyles(props);
     return (
         <>
@@ -19,4 +19,22 @@ function SectionHeading(props) {
     )
 }
 
-export default SectionHeading
+function SectionSubHeading(props) {
+    const classes = useStyles(props);
+    return (
+        <>
+          <Typography className={classes.Text} variant="h5" component="h2">{props.time}</Typography>  
+        </>
+    )
+}
+
+function SectionParagraph(props) {
+    const classes = useStyles(props);
+    return (
+        <>
+          <Typography className={classes.Text} variant="body2" component="p">{props.children}</Typography> 
+        </>
+    )
+}
+
+export {SectionHeading,SectionSubHeading,SectionParagraph}

@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
     },
     Paper :{
         minHeight:'90vh',
+        //maxHeight:'90vh',
         marginLeft:'auto',
         marginRight:'auto',
         marginTop:'auto',
@@ -45,7 +46,7 @@ function AboutText() {
     return (
 
         <div className={classes.root}>
-            <Paper className={classes.Paper}  elevation={3}>
+            <Paper className={classes.Paper} display={{ xs: 'none', sm: 'block' }} elevation={3}>
                 <SectionHeading text = 'About'/>
                 <DivLine/>
                     <p className={classes.Para}>Hi There :)<br/> I am extremely delighted that you are here to visit. Thank you :) <br/>
